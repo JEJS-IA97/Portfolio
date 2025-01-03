@@ -1,4 +1,5 @@
 import Background from "../assets/images/Background-01.jpg"
+import Me from "../assets/images/profile-06.png"
 
 const Front = () => {
     return (
@@ -22,8 +23,8 @@ const Front = () => {
             </h2>
           </div>
           <img
-            src="/src/assets/images/profile-06.png"
-            alt="Image"
+            src={Me}
+            alt="M-Image"
             className="w-[290px]"
           />
         </div>

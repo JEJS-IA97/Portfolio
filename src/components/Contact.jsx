@@ -1,5 +1,9 @@
 import { Link } from "react-scroll";
 import Background from "../assets/images/Background-01.jpg"
+import Linkedin from "../assets/svgs/linkedin2.svg"
+import Whatsapp from "../assets/svgs/whatsapp.svg"
+import Telegram from "../assets/svgs/telegram.svg"
+import Mail from "../assets/svgs/mail.svg"
 
 const Contact = () =>{
     return(
@@ -12,14 +16,14 @@ const Contact = () =>{
             <div className="flex flex-col items-center h-[340px] p-[80px] gap-[40px] text-white">
                 <h2 className="text-[24px] font-bold text-center">Contact Me</h2>
                 <div className="grid grid-cols-2 gap-[20px]">
-                <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center gap-[10px] font-medium hover:bg-GreenB" onClick={() => window.open("mailto:jose.e.jimenez.1411@gmail.com")}> <img src="/src/assets/svgs/mail.svg"
+                <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center gap-[10px] font-medium hover:bg-GreenB" onClick={() => window.open("mailto:jose.e.jimenez.1411@gmail.com")}> <img src={Mail}
                 alt="Email" className="w-[20px]"/>jose.e.jimenez.1411@gmail.com</button>
-                <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center gap-[10px] font-medium hover:bg-GreenB" onClick={() => window.open("https://linkedin.com/in/jejs97", "_blank")}> <img src="/src/assets/svgs/linkedin2.svg"
-                alt="Email" className="w-[20px]"/>linkedin.com/in/jejs97</button>
-                <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center gap-[10px] font-medium hover:bg-GreenB" onClick={() => window.open("https://wa.me/584145017060", "_blank")}> <img src="/src/assets/svgs/whatsapp.svg"
-                alt="Email" className="w-[20px]"/>+58 4145017060</button>
-                <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center font-medium gap-[10px] hover:bg-GreenB" onClick={() => window.open("https://t.me/JEJS97", "_blank")}> <img src="/src/assets/svgs/telegram.svg"
-                alt="Email" className="w-[20px]"/>@JEJS97</button>
+                <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center gap-[10px] font-medium hover:bg-GreenB" onClick={() => window.open("https://linkedin.com/in/jejs97", "_blank")}> <img src={Linkedin}
+                alt="Linkedin" className="w-[20px]"/>linkedin.com/in/jejs97</button>
+                <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center gap-[10px] font-medium hover:bg-GreenB" onClick={() => window.open("https://wa.me/584145017060", "_blank")}> <img src={Whatsapp}
+                alt="Whatsapp" className="w-[20px]"/>+58 4145017060</button>
+                <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center font-medium gap-[10px] hover:bg-GreenB" onClick={() => window.open("https://t.me/JEJS97", "_blank")}> <img src={Telegram}
+                alt="Telegram" className="w-[20px]"/>@JEJS97</button>
                 </div>
             </div>
             <Link 

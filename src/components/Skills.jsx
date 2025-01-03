@@ -1,5 +1,5 @@
 import FlipCard from "./Card";
-import data from "../data/data.json"
+import data from "../../data.json"
 import Background from "../assets/images/Background-01.jpg"
 
 const Skills = () => {

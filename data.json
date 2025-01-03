@@ -1,91 +1,91 @@
 [
     {
         "id":1,
-        "svg":"/src/assets/svgs/javascript.svg",
+        "svg":"/icons/javascript.svg",
         "name":"Javascript",
         "level":30
     },
     {
         "id":2,
-        "svg":"/src/assets/svgs/react.svg",
+        "svg":"/icons//react.svg",
         "name":"React.js",
         "level":40
     },
     {
         "id":3,
-        "svg":"/src/assets/svgs/nodejs.svg",
+        "svg":"/icons/nodejs.svg",
         "name":"Node.js",
         "level":20
     },
     {
         "id":4,
-        "svg":"/src/assets/svgs/html&css.svg",
+        "svg":"/icons/html&css.svg",
         "name":"HTML & CSS",
         "level":60
     },
     {
         "id":5,
-        "svg":"/src/assets/svgs/tailwind.svg",
+        "svg":"/icons/tailwind.svg",
         "name":"Tailwind CSS",
         "level":50
     },
     {
         "id":6,
-        "svg":"/src/assets/svgs/python.svg",
+        "svg":"/icons/python.svg",
         "name":"Python",
         "level":20
     },
     {
         "id":7,
-        "svg":"/src/assets/svgs/flask.svg",
+        "svg":"/icons/flask.svg",
         "name":"Flask",
         "level":20
     },
     {
         "id":8,
-        "svg":"/src/assets/svgs/mysql.svg",
+        "svg":"/icons/mysql.svg",
         "name":"MySQL",
         "level":60
     },
     {
         "id":9,
-        "svg":"/src/assets/svgs/postgresql.svg",
+        "svg":"/icons/postgresql.svg",
         "name":"PostgreSQL",
         "level":60
     },
     {
         "id":10,
-        "svg":"/src/assets/svgs/git.svg",
+        "svg":"/icons/git.svg",
         "name":"Git",
         "level":40
     },
     {
         "id":11,
-        "svg":"/src/assets/svgs/Cypress.svg",
+        "svg":"/icons/Cypress.svg",
         "name":"Cypress",
         "level":40
     },
     {
         "id":12,
-        "svg":"/src/assets/svgs/figma.svg",
+        "svg":"/icons/figma.svg",
         "name":"Figma",
         "level":60
     },
     {
         "id":13,
-        "svg":"/src/assets/svgs/coreldraw.svg",
+        "svg":"/icons/coreldraw.svg",
         "name":"CorelDraw",
         "level":60
     },
     {
         "id":1,
-        "svg":"/src/assets/svgs/photoshop.svg",
+        "svg":"/icons/photoshop.svg",
         "name":"Photoshop",
         "level":40
     },
     {
         "id":15,
-        "svg":"/src/assets/svgs/illustrator.svg",
+        "svg":"/icons/illustrator.svg",
         "name":"Illustrator",
         "level":70
     }
