@@ -37,21 +37,21 @@ const Dropdown = () => {
       {isDropdownOpen && (
         <div className="absolute z-50 flex w-full flex-col bg-Blue2 py-1 mt-2 px-4 text-white shadow-xl">
           <a 
-            href="/public/documents/CV_Developer_José_Jiménez.pdf"
+            href="/documents/CV_Developer_José_Jiménez.pdf"
             target="_blank" 
             rel="noopener noreferrer"
             className="border-b border-GreenB font-semibold"
           >Developer</a>
 
           <a 
-          href="/public/documents/CV_QA_José_Jiménez.pdf"
+          href="/documents/CV_QA_José_Jiménez.pdf"
           target="_blank" 
           rel="noopener noreferrer"
           className="block border-b border-GreenB py-1 font-semibold">
           Quality Assurance</a>
 
           <a
-          href="/public/documents/CV_Designer_José_Jiménez.pdf"
+          href="/documents/CV_Designer_José_Jiménez.pdf"
           target="_blank" 
           rel="noopener noreferrer"
            className="block py-1 font-semibold">Designer</a>
