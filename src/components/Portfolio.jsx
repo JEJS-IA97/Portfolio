@@ -4,7 +4,7 @@ const Portfolio = () => {
   return (
       <div className="relative h-[796px] w-full flex overflow-hidden">
         <img
-          src="/src/assets/images/Background-01.jpg"
+          src="../assets/images/Background-01.jpg"
           alt="Background Image"
           className="w-full h-[796px] z-0 absolute inset-0 object-cover"
         />

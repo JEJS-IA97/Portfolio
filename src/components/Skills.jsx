@@ -8,7 +8,7 @@ const Skills = () => {
     return(
     <div className="relative h-[730px] w-full flex overflow-hidden">
       <img
-        src="/src/assets/images/Background-01.jpg"
+        src="../assets/images/Background-01.jpg"
         alt="Background Image"
         className="w-full h-auto z-0 absolute inset-0 object-cover"
       />

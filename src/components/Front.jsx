@@ -2,7 +2,7 @@ const Front = () => {
     return (
       <div className="relative h-[480px] bg-cover bg-no-repeat flex justify-center items-center">
         <img
-          src="/src/assets/images/Background-01.jpg"
+          src="../assets/images/Background-01.jpg"
           alt="Background Image"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />
