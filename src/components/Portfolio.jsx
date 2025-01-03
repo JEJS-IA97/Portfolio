@@ -1,10 +1,11 @@
 import React from 'react';
+import Background from "../assets/images/Background-01.jpg"
 
 const Portfolio = () => {
   return (
       <div className="relative h-[796px] w-full flex overflow-hidden">
         <img
-          src="../assets/images/Background-01.jpg"
+          src={Background}
           alt="Background Image"
           className="w-full h-[796px] z-0 absolute inset-0 object-cover"
         />

@@ -1,8 +1,10 @@
+import Background from "../assets/images/Background-01.jpg"
+
 const About = () => {
   return (
     <div className="relative h-[400px] w-full flex overflow-hidden bg-cover bg-no-repeat">
       <img
-        src="../assets/images/Background-01.jpg"
+        src={Background}
         alt="Background Image"
         className="w-full h-auto rotate-180 inset-0 object-cover z-0"
       />

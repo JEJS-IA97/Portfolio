@@ -1,10 +1,11 @@
 import { Link } from "react-scroll";
+import Background from "../assets/images/Background-01.jpg"
 
 const Contact = () =>{
     return(
         <div className="w-full h-[340px] relative flex overflow-hidden">
             <img
-            src="../assets/images/Background-01.jpg"
+            src={Background}
             alt="Background Image"
             className="w-full object-cover z-0"/>
             <div className="flex flex-col h-[340px] absolute z-10 w-full items-center">

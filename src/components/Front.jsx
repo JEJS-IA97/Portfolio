@@ -1,8 +1,10 @@
+import Background from "../assets/images/Background-01.jpg"
+
 const Front = () => {
     return (
       <div className="relative h-[480px] bg-cover bg-no-repeat flex justify-center items-center">
         <img
-          src="../assets/images/Background-01.jpg"
+          src={Background}
           alt="Background Image"
           className="absolute inset-0 w-full h-full object-cover z-0"
         />

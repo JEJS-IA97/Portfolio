@@ -1,5 +1,6 @@
 import FlipCard from "./Card";
 import data from "../data/data.json"
+import Background from "../assets/images/Background-01.jpg"
 
 const Skills = () => {
 
@@ -8,7 +9,7 @@ const Skills = () => {
     return(
     <div className="relative h-[730px] w-full flex overflow-hidden">
       <img
-        src="src/assets/images/Background-01.jpg"
+        src={Background}
         alt="Background Image"
         className="w-full h-auto z-0 absolute inset-0 object-cover"
       />
