@@ -14,7 +14,7 @@ const Portfolio = () => {
               <div className="grid lap:grid-cols-3 mob:grid-cols-1 tab:grid-cols-2 lap:gap-[25px] mob:gap-[20px] tab:gap-[34px]">
                 <div className='mob:w-[295px] mob:h-[295px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px] bg-white flex items-center justify-center'>1</div>
                 <div className='mob:w-[295px] mob:h-[295px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px] bg-white flex items-center justify-center'>2</div>
-                <div className='mob:w-[295px] mob:h-[295px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px]bg-white flex items-center justify-center'>3</div>
+                <div className='mob:w-[295px] mob:h-[295px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px] bg-white flex items-center justify-center'>3</div>
                 <div className='mob:w-[295px] mob:h-[295px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px] bg-white flex items-center justify-center'>4</div>
                 <div className='mob:w-[295px] mob:h-[295px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px] bg-white flex items-center justify-center'>5</div>
                 <div className='mob:w-[295px] mob:h-[295px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px] bg-white flex items-center justify-center'>6</div>
