@@ -7,15 +7,17 @@ import Mail from "../assets/svgs/mail.svg"
 
 const Contact = () =>{
     return(
-        <div className="w-full h-[340px] relative flex overflow-hidden">
-            <img
-            src={Background}
-            alt="Background Image"
-            className="w-full object-cover z-0"/>
-            <div className="flex flex-col h-[340px] absolute z-10 w-full items-center">
-            <div className="flex flex-col items-center h-[340px] p-[80px] gap-[40px] text-white">
+        <div className="relative h-auto w-full flex overflow-hidden">
+      <img
+        src={Background}
+        alt="Background Image"
+        className="w-full h-full z-0 absolute inset-0 object-cover"
+      />
+
+            <div className="flex flex-col h-auto relative z-10 w-full items-center ">
+            <div className="flex flex-col items-center h-auto mob:p-[40px] tab:p-[60px] lap:p-[80px] gap-[40px] text-white">
                 <h2 className="text-[24px] font-bold text-center">Contact Me</h2>
-                <div className="grid grid-cols-2 gap-[20px]">
+                <div className="grid tab:grid-cols-2 mob:grid-cols-1 gap-[20px]">
                 <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center gap-[10px] font-medium hover:bg-GreenB" onClick={() => window.open("mailto:jose.e.jimenez.1411@gmail.com")}> <img src={Mail}
                 alt="Email" className="w-[20px]"/>jose.e.jimenez.1411@gmail.com</button>
                 <button className="w-[280px] h-[40px] bg-Blue1 rounded-[10px] flex justify-center items-center gap-[10px] font-medium hover:bg-GreenB" onClick={() => window.open("https://linkedin.com/in/jejs97", "_blank")}> <img src={Linkedin}
@@ -30,7 +32,7 @@ const Contact = () =>{
             to="front" 
             smooth={true} 
             duration={500} 
-            className="absolute rounded-full w-10 h-10 bg-Blue1 z-20 right-10 bottom-10 hover:bg-GreenB cursor-pointer flex items-center justify-center hover:text-Blue1 text-GreenB">
+            className="absolute rounded-full lap:w-10 lap:h-10 mob:w-8 mob:h-8 bg-Blue1 z-20 lap:right-10 lap:bottom-10 mob:right-3 mob:bottom-5 hover:bg-GreenB cursor-pointer flex items-center justify-center hover:text-Blue1 text-GreenB">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" className="h-5 w-5 rotate-180 ">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />

@@ -7,7 +7,7 @@
     },
     {
         "id":2,
-        "svg":"/icons//react.svg",
+        "svg":"/icons/react.svg",
         "name":"React.js",
         "level":40
     },
@@ -61,7 +61,7 @@
     },
     {
         "id":11,
-        "svg":"/icons/Cypress.svg",
+        "svg":"/icons/cypress.svg",
         "name":"Cypress",
         "level":40
     },

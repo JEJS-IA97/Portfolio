@@ -5,6 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'mob': '375px',
+      'tab': '768px',
+      'lap': '1024px',
+      'desk1': '1280px',
+      'desk2': '1440px',
+      'desk3': '1920px',
+    },
     extend: {
       colors: {
         "GreenB": "hsl(163.469, 100%, 38%)",
