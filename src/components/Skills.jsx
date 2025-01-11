@@ -4,7 +4,7 @@ import Background from "../assets/images/Background-01.jpg"
 
 const Skills = () => {
 
-    const skills = data.slice(0,15);
+    const skills = data.skills.slice(0,15);
 
     return(
     <div className="relative h-auto w-full flex overflow-hidden mt-[-1px]">

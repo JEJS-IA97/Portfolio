@@ -1,4 +1,5 @@
-[
+{
+    "skills": [
     {
         "id":1,
         "svg":"/icons/javascript.svg",
@@ -89,4 +90,45 @@
         "name":"Illustrator",
         "level":70
     }
-]
+],
+
+    "portfolio": [
+    {
+          "id": 1,
+          "defaultImage": "/images/BancoD.png",
+          "hoverImage": "/images/BancoB.png",
+          "url" : "https://github.com/JEJS-IA97"
+        },
+        {
+          "id": 2,
+          "defaultImage": "/images/SoundvibeD.png",
+          "hoverImage": "/images/SoundvibeB.png",
+          "url" : "https://github.com/JEJS-IA97"
+        },
+        {
+          "id": 3,
+          "defaultImage": "/images/UrbanD.png",
+          "hoverImage": "/images/UrbanB.png",
+          "url" : "https://github.com/JEJS-IA97"
+        },
+        {
+          "id": 4,
+          "defaultImage": "/images/CineD.png",
+          "hoverImage": "/images/CineB.png",
+          "url" : "https://cineverse-mocha.vercel.app/"
+        },
+        {
+          "id": 5,
+          "defaultImage": "/images/ProtoD.png",
+          "hoverImage": "/images/ProtoB.png",
+          "url" : "https://www.figma.com/proto/aKHzRzXH7CyLTyhPgpIr12/Jose-Jimenez?node-id=25-370&starting-point-node-id=25%3A370&t=42Y4vjCXeA8zjRLq-1"
+          },
+        {
+          "id": 6,
+          "defaultImage": "/images/404D.png",
+          "hoverImage": "/images/404B.png",
+          "url" : "https://github.com/JEJS-IA97"
+        }
+      ]
+
+}
