@@ -35,7 +35,7 @@ const Dropdown = () => {
       </div>
 
       {isDropdownOpen && (
-        <div className="absolute z-50 flex w-full flex-col bg-Blue2 py-1 mt-2 px-4 text-white shadow-xl">
+        <div className="absolute z-50 flex w-full flex-col bg-transparent py-1 mt-2 px-4 text-white shadow-xl desk1:text-[16px] font-roboto">
           <a 
             href="/documents/CV_Developer_José_Jiménez.pdf"
             target="_blank" 
@@ -49,7 +49,6 @@ const Dropdown = () => {
           rel="noopener noreferrer"
           className="block border-b border-GreenB py-1 font-semibold">
           Quality Assurance</a>
-
           <a
           href="/documents/CV_Designer_José_Jiménez.pdf"
           target="_blank" 

@@ -31,7 +31,7 @@ const Navbar = () => {
       <div
         className={`${
           menuOpen ? "flex flex-col h-screen items-center gap-y-6" : "hidden"
-        } mob:absolute mob:top-full mob:left-0 mob:w-full mob:backdrop-blur-md mob:bg-blue-950/30 tab:bg-transparent tab:backdrop-blur-none tab:flex tab:static tab:flex-row lap:space-x-8 tab:space-x-6 justify-center font-semibold lap:text-[16px] tab:text-[14px]`}
+        } mob:absolute mob:top-full mob:left-0 mob:w-full mob:backdrop-blur-md mob:bg-blue-950/30 tab:bg-transparent tab:backdrop-blur-none tab:flex tab:static tab:flex-row lap:space-x-8 tab:space-x-6 justify-center font-semibold lap:text-[16px] tab:text-[14px] desk1:text-[16px] font-roboto desk1:space-x-10 desk2:space-x-12 desk3:space-x-14`}
       >
         <Link
           to="front"

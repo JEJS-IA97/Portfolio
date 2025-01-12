@@ -12,7 +12,7 @@ const FlipCard = ({ svg, name, level }) => {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       <div
-        className="bg-Blue2 tab:w-[137px] tab:h-[137px] mob:w-[83px] mob:h-[83px] rounded-[10px] flex flex-col items-center justify-center lap:gap-y-[20px] mob:gap-y-[10px] cursor-pointer"
+        className="bg-Blue2 font-roboto tab:w-[137px] tab:h-[137px] mob:w-[83px] mob:h-[83px] rounded-[10px] flex flex-col items-center justify-center lap:gap-y-[20px] mob:gap-y-[10px] cursor-pointer"
         onClick={handleFlip}
       >
         <img src={svg} alt={svg} className="w-auto tab:h-[42px] mob:h-[25px]" />
