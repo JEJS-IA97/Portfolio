@@ -6,7 +6,7 @@ const Project = ({ defaultImage, hoverImage, url }) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
     <div
-      className={`mob:w-[295px] mob:h-[295px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px] flex items-center justify-center overflow-hidden cursor-pointer ${
+      className={`mob:w-[295px] mob:h-[295px] pho:w-[280px] pho:h-[280px] lap:w-[267px] lap:h-[267px] tab:w-[307px] tab:h-[307px] flex items-center justify-center overflow-hidden cursor-pointer ${
         isHovered ? "bg-white" : "bg-Blue2"
       }`}
       onMouseEnter={() => setIsHovered(true)}

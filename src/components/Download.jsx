@@ -23,7 +23,7 @@ const Dropdown = () => {
   return (
     <div className="dropdown relative">
       <div className="flex items-center gap-2 cursor-pointer hover:text-GreenB" onClick={toggleDropdown}>
-        <a className="menu-hover text-base hover:text-GreenB">
+        <a className="menu-hover text-base pho:text-[14px] hover:text-GreenB">
           Curriculums
         </a>
         <span>

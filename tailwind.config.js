@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     screens: {
+      'pho': '320px',
       'mob': '375px',
       'tab': '768px',
       'lap': '1024px',
