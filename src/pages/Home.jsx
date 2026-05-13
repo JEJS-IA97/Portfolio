@@ -1,10 +1,11 @@
-import React from "react";
 import Navbar from "../components/Navbar";
 import Front from "../components/Front";
 import About from "../components/About";
-import Skills from "../components/Skills";
+import Stack from "../components/Stack";
 import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
+import Experience from "../components/Experience";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -16,14 +17,20 @@ const Home = () => {
       <div id="about" >
         <About />
       </div>
-      <div id="skills">
-        <Skills />
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="stack">
+        <Stack />
       </div>
       <div id="portfolio">
         <Portfolio />
       </div>
       <div id="contact">
         <Contact />
+      </div>
+      <div id="fopter">
+        <Footer />
       </div>
     </div>
   );
