@@ -14,7 +14,7 @@ const PlaywrightIcon = () => (
   <img 
     src="https://playwright.dev/img/playwright-logo.svg" 
     alt="Playwright" 
-    className="w-[1.65em] h-[1.65em] brightness-0 invert opacity-80 group-hover:brightness-100 group-hover:invert-0 group-hover:opacity-100 transition-all duration-300"
+    className="h-[1.65em] w-[1.65em] brightness-0 invert opacity-80 transition-all duration-300 group-hover:brightness-100 group-hover:invert-0 group-hover:opacity-100"
   />
 );
 
@@ -63,37 +63,37 @@ const stackCategories = [
 
 const Stack = () => {
   return (
-    <div className="relative w-full py-[60px] px-[120px] flex flex-col items-center bg-gradient-to-r from-[#00040D] to-[#00133B] overflow-hidden">
+    <div className="relative flex w-full flex-col items-center overflow-hidden bg-gradient-to-r from-[#00040D] to-[#00133B] px-4 py-16 mob:px-6 tab:px-8 lap:px-12 desk2:px-20 desk3:px-24">
       
       <img
         src={Background}
         alt="Background"
-        className="w-full h-full z-0 absolute inset-0 object-cover opacity-30 pointer-events-none"
+        className="absolute inset-0 z-0 h-full w-full object-cover opacity-30 pointer-events-none"
       />
 
-      <div className="relative z-10 max-w-5xl w-full flex flex-col items-center">
+      <div className="relative z-10 flex w-full max-w-[1500px] flex-col items-center">
         
-        <h1 className="text-[#efefef] text-[72px] text-opacity-80 leading-none font-bold text-center mb-16">
-          Tech Stack<span className="text-[#45C7F8] text-opacity-50">.</span>
+        <h1 className="mb-12 text-center text-[44px] font-bold leading-none text-[#efefef] text-opacity-80 mob:text-[52px] tab:mb-14 tab:text-[60px] lap:mb-16 lap:text-[72px] desk3:text-[84px]">
+          Tech Stack<span className="text-[#45C7F8]/70">.</span>
         </h1>
 
-        <div className="flex flex-col gap-10 w-full">
+        <div className="flex w-full flex-col gap-10">
           {stackCategories.map((category) => (
             <div key={category.title} className="flex flex-col items-center">
               
-              <h3 className="text-[#45C7F8]/70 text-2xl font-mono mb-8 tracking-wider uppercase text-center">
+              <h3 className="mb-8 text-center font-mono text-xl uppercase tracking-wider text-[#45C7F8]/70 tab:text-2xl">
                 {category.title}
               </h3>
 
-              <div className="flex flex-wrap justify-center gap-8 md:gap-10">
+              <div className="flex flex-wrap justify-center gap-6 tab:gap-8 lap:gap-10">
                 {category.icons.map((tech) => (
-                  <div key={tech.name} className="group relative flex flex-col items-center justify-center cursor-pointer">
+                  <div key={tech.name} className="group relative flex cursor-pointer flex-col items-center justify-center">
                     
-                    <div className={`text-5xl text-[#efefef] transition-all duration-300 transform group-hover:scale-110 ${tech.color}`}>
+                    <div className={`transform text-4xl text-[#efefef] transition-all duration-300 group-hover:scale-110 mob:text-[2.8rem] tab:text-5xl ${tech.color}`}>
                       <tech.Component />
                     </div>
 
-                    <span className="absolute -bottom-8 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-semibold text-[#efefef] bg-[#00133B]/80 px-2 py-1 rounded-md pointer-events-none whitespace-nowrap z-20">
+                    <span className="pointer-events-none absolute -bottom-8 z-20 whitespace-nowrap rounded-md bg-[#00133B]/80 px-2 py-1 text-sm font-semibold text-[#efefef] opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       {tech.name}
                     </span>
                     

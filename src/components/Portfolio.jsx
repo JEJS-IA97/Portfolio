@@ -10,7 +10,7 @@ const projects = [
     {
         id: 1,
         title: "Cineverse",
-        description: "Página web para la exploración y reproducción de películas, integrada con TMDB API y desarrollada con React, Tailwind CSS y Vite.",
+        description: "A website for browsing and streaming movies, integrated with the IMDB API and built using React, Tailwind CSS, and Vite.",
         imageInitial: "/images/CineB.png",
         imageHover: "/images/CineD.png",
         url: "https://cineverse-mocha.vercel.app/"
@@ -18,7 +18,7 @@ const projects = [
     {
         id: 2,
         title: "Urban Threads",
-        description: "Ecommerce de moda urbana con React, Tailwind CSS y Vite.",
+        description: "A urban fashion e-commerce built with React, Tailwind CSS, and Vite.",
         imageInitial: "/images/UrbanB.png",
         imageHover: "/images/UrbanD.png",
         url: "https://github.com/JEJS-IA97"
@@ -26,7 +26,7 @@ const projects = [
     {
         id: 3,
         title: "Banco Universitario",
-        description: "Sistema web para transacciones estudiantiles y gestión de becas desarrollado en React y Redux.",
+        description: "A web-based system for student transactions and scholarship management built using React and Redux.",
         imageInitial: "/images/BancoB.png",
         imageHover: "/images/BancoD.png",
         url: "https://github.com/JEJS-IA97"
@@ -34,7 +34,7 @@ const projects = [
     {
         id: 4,
         title: "SoundVibe",
-        description: "Red social móvil para compartir gustos musicales, utilizando React Native y PostgreSQL.",
+        description: "A mobile social network for sharing musical preferences, utilizing React Native and PostgreSQL.",
         imageInitial: "/images/SoundvibeB.png",
         imageHover: "/images/SoundvibeD.png",
         url: "https://github.com/JEJS-IA97"
@@ -42,7 +42,7 @@ const projects = [
     {
         id: 5,
         title: "Pokedex",
-        description: "Aplicación interactiva para la exploración de la primera generación de Pokémons, construida con Vite y JavaScript.",
+        description: "An interactive application for exploring the first generation of Pokémon, built with Vite and JavaScript.",
         imageInitial: "/images/PokeB.png",
         imageHover: "/images/PokeD.png",
         url: "https://pokedex-sable-iota.vercel.app/"
@@ -50,7 +50,7 @@ const projects = [
     {
         id: 6,
         title: "Chat App",
-        description: "Plataforma de mensajería instantánea construida con React y Socket.io, con perfiles y búsqueda dinámica.",
+        description: "Instant messaging platform built with React and Socket.io, featuring profiles and dynamic search.",
         imageInitial: "/images/ChatB.png",
         imageHover: "/images/ChatD.png",
         url: "https://chat-app-rust-two-14.vercel.app/"
@@ -58,7 +58,7 @@ const projects = [
     {
         id: 7,
         title: "Cypress Core",
-        description: "Arquitectura base de automatización E2E para la validación de transacciones en plataformas complejas.",
+        description: "End-to-end automation framework for transaction validation on complex platforms.",
         imageInitial: "/images/CoreB.png",
         imageHover: "/images/CoreD.png",
         url: "https://github.com/JEJS-IA97/Cypress-Core"
@@ -66,7 +66,7 @@ const projects = [
     {
         id: 8,
         title: "E2E-Collective",
-        description: "Framework avanzado de pruebas funcionales y de regresión integral.",
+        description: "Advanced framework for comprehensive functional and regression testing.",
         imageInitial: "/images/e2eB.png",
         imageHover: "/images/e2eD.png",
         url: "https://github.com/JEJS-IA97/e2e-collective"
@@ -74,7 +74,7 @@ const projects = [
     {
         id: 9,
         title: "Inflatio (Financial Tracker)",
-        description: "Aplicación para el seguimiento de inflación y saldos multi-moneda desarrollada con React y Node.js.",
+        description: "A financial tracking application for monitoring inflation and multi-currency balances built with React and Node.js.",
         imageInitial: "/images/InflatioB.png",
         imageHover: "/images/InflatioD.png",
         url: "https://github.com/JEJS-IA97"
@@ -82,7 +82,7 @@ const projects = [
     {
         id: 10,
         title: "Prototypes & Designs",
-        description: "Colección de prototipos interactivos y diseños UI/UX creados con Figma y Adobe Illustrator.",
+        description: "Collection of interactive prototypes and UI/UX designs created with Figma and Adobe Illustrator.",
         imageInitial: "/images/ProtoB.png",
         imageHover: "/images/ProtoD.png",
         url: "https://github.com/JEJS-IA97"
@@ -90,8 +90,8 @@ const projects = [
     {
         id: 11,
         title: "In progress...",
-        description: "¡Más proyectos emocionantes en camino! Mantente atento para ver las últimas adiciones a mi portafolio.",
-        imageInitial: "/images/404D.png",
+        description: "More exciting projects are on the way! Stay tuned for the latest additions to my portfolio.",
+        imageInitial: "/images/404B.png",
         imageHover: "/images/404D.png",
         url: "https://github.com/JEJS-IA97"
     }
@@ -99,60 +99,62 @@ const projects = [
 
 const Portfolio = () => {
     return (
-        <div className="relative w-full py-[80px] px-[20px] md:px-[60px] flex flex-col items-center bg-gradient-to-r from-[#00133B] to-[#00040D] overflow-hidden font-sans">
+        <div className="relative flex w-full flex-col items-center overflow-hidden bg-gradient-to-r from-[#00133B] to-[#00040D] px-4 py-16 font-sans mob:px-6 tab:px-8 lap:px-12 desk2:px-20 desk3:px-24">
 
             <img
                 src={Background}
                 alt=""
                 aria-hidden="true"
-                className="w-full h-full z-0 absolute inset-0 object-cover opacity-30 pointer-events-none"
+                className="absolute inset-0 z-0 h-full w-full object-cover opacity-30 pointer-events-none"
             />
 
-            <div className="relative z-10 w-full max-w-[1200px] flex flex-col items-center">
+            <div className="relative z-10 flex w-full max-w-[1600px] flex-col items-center">
                 
-                <h1 className="text-[#efefef] text-[72px] text-opacity-80 leading-none font-bold text-center mb-16">
+                <h1 className="mb-12 text-center text-[44px] font-bold leading-none text-[#efefef] text-opacity-80 mob:text-[52px] tab:mb-14 tab:text-[60px] lap:mb-16 lap:text-[72px] desk3:text-[84px]">
                     Projects<span className="text-[#45C7F8] text-opacity-50">.</span>
                 </h1>
 
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={30}
+                    spaceBetween={24}
                     slidesPerView={1}
                     navigation
                     pagination={{ clickable: true }}
                     autoplay={{ delay: 4000 }}
                     breakpoints={{
-                        640: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
+                        640: { slidesPerView: 1, spaceBetween: 20 },
+                        768: { slidesPerView: 2, spaceBetween: 24 },
+                        1200: { slidesPerView: 3, spaceBetween: 28 },
+                        1800: { slidesPerView: 4, spaceBetween: 32 },
                     }}
-                    className="w-full pb-16 custom-swiper"
+                    className="custom-swiper w-full pb-16"
                 >
                     {projects.map((proj) => (
-                        <SwiperSlide key={proj.id}>
+                        <SwiperSlide key={proj.id} className="h-auto">
                             <a 
                                 href={proj.url} 
                                 target="_blank" 
                                 rel="noreferrer"
-                                className="group block bg-[#142e48]/30 p-4 pb-12 rounded-sm shadow-2xl transform transition-transform duration-300 hover:rotate-2  h-[540px]"
+                                className="group flex h-full min-h-[470px] flex-col rounded-sm bg-[#142e48]/30 p-4 pb-10 shadow-2xl transform transition-transform duration-300 hover:rotate-2 mob:min-h-[500px] lap:min-h-[540px]"
                             >
-                                <div className="relative aspect-square overflow-hidden bg-[#142e48] group-hover:bg-[#efefef] flex items-center justify-center rounded-sm border border-gray-300 group-hover:border-[#45C7F8] transition-colors duration-500 mb-6" >
+                                <div className="relative mb-6 aspect-square overflow-hidden rounded-sm border border-gray-300 bg-[#142e48] transition-colors duration-500 group-hover:border-[#45C7F8] group-hover:bg-[#efefef] flex items-center justify-center">
                                     <img 
                                         src={proj.imageInitial} 
                                         alt={proj.title} 
-                                        className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0"
+                                        className="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity duration-500 group-hover:opacity-0"
                                     />
                                     <img 
                                         src={proj.imageHover} 
                                         alt={`${proj.title} Hover`} 
-                                        className="absolute inset-0 w-full h-full object-cover transition-all duration-500 opacity-0 group-hover:opacity-100 group-hover:scale-110"
+                                        className="absolute inset-0 h-full w-full object-cover opacity-0 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100"
                                     />
                                 </div>
 
                                 <div className="px-2">
-                                    <h3 className="text-[#efefef] text-xl font-bold mb-3">
+                                    <h3 className="mb-3 text-lg font-bold text-[#efefef] tab:text-xl">
                                         {proj.title}
                                     </h3>
-                                    <p className="text-[#efefef]/80 text-sm leading-relaxed font-medium italic">
+                                    <p className="text-sm font-medium italic leading-relaxed text-[#efefef]/80 tab:text-[15px]">
                                         {proj.description}
                                     </p>
                                 </div>

@@ -3,25 +3,25 @@ import Me from "../assets/images/Profile-02.jpg"
 
 const About = () => {
   return (
-    <div className="relative w-full py-[60px] px-[120px] flex flex-col items-center bg-gradient-to-r from-[#00040D] to-[#00133B] overflow-hidden">
+    <div className="relative flex w-full flex-col items-center overflow-hidden bg-gradient-to-r from-[#00040D] to-[#00133B] px-4 py-16 mob:px-6 tab:px-8 lap:px-12 desk2:px-20 desk3:px-24">
 
           <img
             src={Background}
             alt=""
             aria-hidden="true"
-            className="w-full h-full z-0 absolute inset-0 object-cover opacity-30 pointer-events-none"
+            className="absolute inset-0 z-0 h-full w-full object-cover opacity-30 pointer-events-none"
           />
 
-      <h1 className="relative z-10 text-[#efefef] text-[72px] text-opacity-80 leading-none font-bold text-center mb-16">
-        About<span className="text-[#45C7F8] text-opacity-50">.</span>
+      <h1 className="relative z-10 mb-12 text-center text-[44px] font-bold leading-none text-[#efefef] text-opacity-80 mob:text-[52px] tab:mb-14 tab:text-[60px] lap:mb-16 lap:text-[72px] desk3:text-[84px]">
+        About<span className="text-[#45C7F8]/70">.</span>
       </h1>
 
-      <div className="relative z-10 flex flex-row w-full max-w-[1200px] gap-16 items-center justify-between font-roboto">
+      <div className="relative z-10 flex w-full max-w-[1500px] flex-col gap-10 font-roboto lap:flex-row lap:items-center lap:justify-between lap:gap-16">
 
-        <div className="flex flex-col w-[55%]">
-          <h2 className="text-[32px] font-bold text-white mb-6 text-[#45C7F8] text-opacity-50">Who Am I</h2>
+        <div className="flex w-full flex-col lap:w-[55%]">
+          <h2 className="mb-6 text-[28px] font-bold text-[#45C7F8]/70 mob:text-[30px] tab:text-[32px]">Who Am I</h2>
           
-          <div className="flex flex-col gap-4 text-[18px] font-normal text-[#efefef] text-opacity-90 text-justify leading-relaxed">
+          <div className="flex flex-col gap-4 text-left text-[16px] font-normal leading-relaxed text-[#efefef] text-opacity-90 tab:text-[17px] lap:text-[18px] text-justify">
             <p>
               Hi! I&apos;m José Jiménez, a passionate Software Engineer based in Barquisimeto. I thrive at the intersection of logic and creativity, blending my roles as a QA Automation Engineer, Frontend Developer, and Graphic/UI Designer. 
             </p>
@@ -34,11 +34,11 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-[45%] h-[450px] overflow-hidden shadow-2xl rounded-sm">
+        <div className="h-[260px] w-full overflow-hidden rounded-sm shadow-2xl mob:h-[320px] tab:h-[380px] lap:h-[450px] lap:w-[45%] desk3:h-[520px]">
           <img
             src={Me}
             alt="José Jiménez"
-            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-in-out rounded-lg"
+            className="h-full w-full rounded-lg object-cover transition-transform duration-500 ease-in-out hover:scale-105"
           />
         </div>
 

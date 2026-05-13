@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="h-auto flex flex-col">
+    <div className="flex min-h-screen flex-col overflow-x-hidden">
       <Navbar />
       <div id="front">
         <Front />
