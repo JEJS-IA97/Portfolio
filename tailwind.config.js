@@ -10,9 +10,12 @@ export default {
       'mob': '375px',
       'tab': '768px',
       'lap': '1024px',
+      'random1': '1228px',
       'desk1': '1280px',
+      'random2': '1396px',
       'desk2': '1440px',
       'desk3': '1920px',
+      'random3': '2100px',
     },
     extend: {
       colors: {
