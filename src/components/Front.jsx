@@ -6,7 +6,7 @@ import github from "../assets/svgs/github.svg";
 import telegram from "../assets/svgs/telegram (2).svg";
 import discord from "../assets/svgs/discord.svg";
 import frame from "../assets/svgs/frame.svg";
-import Me2 from "../assets/images/profile-06.png";
+import Me2 from "../assets/images/profile-07.png";
 
 const Front = () => {
   return (

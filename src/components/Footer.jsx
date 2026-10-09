@@ -10,7 +10,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="relative w-full border-t border-[#45C7F8]/20 bg-gradient-to-r from-[#00236D] to-[#00040D] px-4 py-6 font-roboto mob:px-6 tab:px-8 lap:px-12 desk2:px-20">
+        <footer className="relative w-full border-t border-[#45C7F8]/20 bg-gradient-to-r from-[#00236D] to-[#00040D] px-4 py-6 font-roboto mob:px-6 tab:px-8 lap:px-8 desk2:px-12">
         
         <div className="mx-auto grid w-full max-w-[1400px] gap-4 tab:grid-cols-[1fr_auto_1fr] tab:items-center">
             <div className="hidden tab:block" aria-hidden="true"></div>
