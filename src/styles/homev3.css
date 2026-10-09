@@ -60,6 +60,11 @@
 .v3 .nav-cta:hover{background:var(--gold);transform:translateY(-1px)}
 .v3 .burger{display:none;margin-left:auto;background:none;border:0;color:var(--text);cursor:pointer;padding:8px}
 .v3 .burger svg{width:26px;height:26px}
+.v3 .nav-mobile{display:flex;flex-direction:column;padding:8px 28px 24px;border-top:1px solid var(--line);animation:v3menu .25s ease}
+.v3 .nav-mobile a{padding:15px 0;font-size:15px;color:var(--text-2);border-bottom:1px solid var(--line);transition:color .2s}
+.v3 .nav-mobile a:hover{color:var(--gold)}
+.v3 .nav-mobile .nav-cta{display:block;margin-top:18px;text-align:center;padding:13px 22px}
+@keyframes v3menu{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
 
 /* ── HERO ── */
 .v3 .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:140px 0 90px}

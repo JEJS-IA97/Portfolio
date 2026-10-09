@@ -16,27 +16,40 @@ const scrollTo = (id) => {
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
   const active = useScrollSpy();
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+  const go = (id) => { setOpen(false); scrollTo(id); };
   return (
     <nav className={`nav${scrolled ? " scrolled" : ""}`} aria-label="Principal">
       <div className="nav-in">
-        <a className="brand" href="#top" onClick={(e) => { e.preventDefault(); scrollTo("top"); }}>José <em>Jiménez</em></a>
+        <a className="brand" href="#top" onClick={(e) => { e.preventDefault(); go("top"); }}>José <em>Jiménez</em></a>
         <div className="nav-links">
-          <a href="#about" className={active === "about" ? "active" : ""} onClick={(e) => { e.preventDefault(); scrollTo("about"); }}>About</a>
-          <a href="#skills" className={active === "skills" ? "active" : ""} onClick={(e) => { e.preventDefault(); scrollTo("skills"); }}>Skills</a>
-          <a href="#work" className={active === "work" ? "active" : ""} onClick={(e) => { e.preventDefault(); scrollTo("work"); }}>Work</a>
-          <a href="#experience" className={active === "experience" ? "active" : ""} onClick={(e) => { e.preventDefault(); scrollTo("experience"); }}>Experience</a>
+          <a href="#about" className={active === "about" ? "active" : ""} onClick={(e) => { e.preventDefault(); go("about"); }}>About</a>
+          <a href="#skills" className={active === "skills" ? "active" : ""} onClick={(e) => { e.preventDefault(); go("skills"); }}>Skills</a>
+          <a href="#work" className={active === "work" ? "active" : ""} onClick={(e) => { e.preventDefault(); go("work"); }}>Work</a>
+          <a href="#experience" className={active === "experience" ? "active" : ""} onClick={(e) => { e.preventDefault(); go("experience"); }}>Experience</a>
         </div>
-        <button className="nav-cta" onClick={() => scrollTo("contact")}>Let&apos;s talk</button>
-        <button className="burger" aria-label="Abrir menú">
-          <svg fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg>
+        <button className="nav-cta" onClick={() => go("contact")}>Let&apos;s talk</button>
+        <button className="burger" aria-label={open ? "Cerrar menú" : "Abrir menú"} aria-expanded={open} aria-controls="nav-mobile" onClick={() => setOpen(!open)}>
+          {open
+            ? <svg fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path strokeLinecap="round" d="M6 6l12 12M18 6L6 18" /></svg>
+            : <svg fill="none" stroke="currentColor" strokeWidth="1.6" viewBox="0 0 24 24"><path strokeLinecap="round" d="M4 7h16M4 12h16M4 17h16" /></svg>}
         </button>
       </div>
+      {open && (
+        <div className="nav-mobile" id="nav-mobile">
+          <a href="#about" onClick={(e) => { e.preventDefault(); go("about"); }}>About</a>
+          <a href="#skills" onClick={(e) => { e.preventDefault(); go("skills"); }}>Skills</a>
+          <a href="#work" onClick={(e) => { e.preventDefault(); go("work"); }}>Work</a>
+          <a href="#experience" onClick={(e) => { e.preventDefault(); go("experience"); }}>Experience</a>
+          <button className="nav-cta" onClick={() => go("contact")}>Let&apos;s talk</button>
+        </div>
+      )}
     </nav>
   );
 };
